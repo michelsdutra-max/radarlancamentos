@@ -5,6 +5,7 @@ import SolutionSection from "@/components/landing/SolutionSection";
 import DifferentialsSection from "@/components/landing/DifferentialsSection";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";
 import BenefitsSection from "@/components/landing/BenefitsSection";
+import PricingSection from "@/components/landing/PricingSection";
 import SocialProofSection from "@/components/landing/SocialProofSection";
 import FAQSection from "@/components/landing/FAQSection";
 import CTASection from "@/components/landing/CTASection";
