@@ -1,5 +1,4 @@
 import HeroSection from "@/components/landing/HeroSection";
-import RadarShowcaseSection from "@/components/landing/RadarShowcaseSection";
 import ProblemSection from "@/components/landing/ProblemSection";
 import InsightSection from "@/components/landing/InsightSection";
 import SolutionSection from "@/components/landing/SolutionSection";
@@ -16,7 +15,6 @@ const Index = () => {
   return (
     <main className="bg-radar-dark min-h-screen">
       <HeroSection />
-      <RadarShowcaseSection />
       <ProblemSection />
       <InsightSection />
       <SolutionSection />

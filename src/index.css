@@ -105,25 +105,4 @@
   .border-glow {
     border: 1px solid rgba(255, 0, 51, 0.15);
   }
-
-  .radar-sweep {
-    animation: radar-sweep-rotate 5s linear infinite;
-    transform-origin: center;
-  }
-
-  @keyframes radar-sweep-rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-  }
-
-  .radar-blip {
-    animation: radar-blip-pulse 2.4s ease-in-out infinite;
-    transform-origin: center;
-    filter: drop-shadow(0 0 6px rgba(255, 45, 85, 0.9));
-  }
-
-  @keyframes radar-blip-pulse {
-    0%, 100% { opacity: 0.2; r: 2; }
-    50% { opacity: 1; r: 4; }
-  }
 }
