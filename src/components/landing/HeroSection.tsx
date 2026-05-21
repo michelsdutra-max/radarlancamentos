@@ -32,9 +32,8 @@ const HeroSection = () => {
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold leading-tight mb-6">
-            Descubra lançamentos{" "}
-            <span className="text-gradient-red">antes da maioria</span>{" "}
-            e lucre como afiliado
+            O YouTube esconde.<br />
+            O <span className="text-gradient-red">Radar</span> entrega.
           </h1>
 
           <p className="text-lg md:text-xl text-radar-gray leading-relaxed mb-10 max-w-xl">
