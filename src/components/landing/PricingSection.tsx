@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Check, Sparkles, Zap, Crown } from "lucide-react";
+import { Check, Sparkles, Zap, Crown, Gift } from "lucide-react";
 
 const plans = [
   {
@@ -39,16 +39,19 @@ const plans = [
     icon: Crown,
     price: "R$ 347,00",
     priceNote: "ou 12x R$ 43,00",
-    description: "A escolha dos afiliados que pensam em escala e lucro de verdade.",
+    description: "Pra quem vai fazer de lançamento sua estratégia principal",
+    economy: "Economia de R$ 817 no ano",
     features: [
       "Tudo do plano Trimestral",
-      "Economia de R$ 817 no ano",
-      "Alertas de lançamentos em tempo real",
+      "12 meses de acesso",
+      "Prioridade em novas features",
       "Suporte VIP com resposta imediata",
-      "Acesso antecipado a novas funcionalidades",
-      "Grupo exclusivo de afiliados",
     ],
-    cta: "Quero o Anual",
+    bonus: {
+      title: "Bônus exclusivo: Produtos Ocultos",
+      text: "Acesse o link de afiliação de produtos que não aparecem na busca pública da Hotmart — oportunidades que 99% dos afiliados nunca vão encontrar.",
+    },
+    cta: "Quero o anual",
     highlighted: true,
     badge: "MAIS VANTAJOSO",
   },
@@ -109,14 +112,20 @@ const PricingSection = () => {
               <h3 className="text-white font-display font-bold text-xl mb-2">{plan.name}</h3>
               <p className="text-radar-gray-light text-sm mb-5 leading-relaxed min-h-[40px]">{plan.description}</p>
 
-              <div className="mb-6">
+              <div className="mb-5">
                 <div className="text-3xl md:text-4xl font-display font-bold text-white">{plan.price}</div>
                 <div className={`text-sm mt-1 ${plan.highlighted ? "text-radar-green font-medium" : "text-radar-gray-light"}`}>
                   {plan.priceNote}
                 </div>
               </div>
 
-              <ul className="space-y-3 mb-8 text-left flex-1">
+              {plan.economy && (
+                <div className="mb-5 rounded-md border border-radar-green/30 bg-radar-green/10 px-3 py-2 text-xs font-medium text-radar-green text-center">
+                  ✓ {plan.economy}
+                </div>
+              )}
+
+              <ul className="space-y-3 mb-6 text-left flex-1">
                 {plan.features.map((feature, fi) => (
                   <li key={fi} className="flex items-start gap-3 text-sm">
                     <div className={`flex-shrink-0 h-5 w-5 rounded-full flex items-center justify-center mt-0.5 ${plan.highlighted ? "bg-radar-green/15" : "bg-radar-red/10"}`}>
@@ -126,6 +135,16 @@ const PricingSection = () => {
                   </li>
                 ))}
               </ul>
+
+              {plan.bonus && (
+                <div className="mb-6 rounded-lg border border-dashed border-radar-red/40 bg-radar-red/5 p-4 text-left">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Gift className="h-4 w-4 text-radar-red" />
+                    <span className="text-sm font-bold text-radar-red">{plan.bonus.title}</span>
+                  </div>
+                  <p className="text-xs text-radar-gray-light leading-relaxed">{plan.bonus.text}</p>
+                </div>
+              )}
 
               <a
                 href="#"
