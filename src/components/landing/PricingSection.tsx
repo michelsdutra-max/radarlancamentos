@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Check, Sparkles, Zap, Crown } from "lucide-react";
+import { Check, Sparkles, Zap, Crown, Gift } from "lucide-react";
 
 const plans = [
   {
@@ -39,16 +39,19 @@ const plans = [
     icon: Crown,
     price: "R$ 347,00",
     priceNote: "ou 12x R$ 43,00",
-    description: "A escolha dos afiliados que pensam em escala e lucro de verdade.",
+    description: "Pra quem vai fazer de lançamento sua estratégia principal",
+    economy: "Economia de R$ 817 no ano",
     features: [
       "Tudo do plano Trimestral",
-      "Economia de R$ 817 no ano",
-      "Alertas de lançamentos em tempo real",
+      "12 meses de acesso",
+      "Prioridade em novas features",
       "Suporte VIP com resposta imediata",
-      "Acesso antecipado a novas funcionalidades",
-      "Grupo exclusivo de afiliados",
     ],
-    cta: "Quero o Anual",
+    bonus: {
+      title: "Bônus exclusivo: Produtos Ocultos",
+      text: "Acesse o link de afiliação de produtos que não aparecem na busca pública da Hotmart — oportunidades que 99% dos afiliados nunca vão encontrar.",
+    },
+    cta: "Quero o anual",
     highlighted: true,
     badge: "MAIS VANTAJOSO",
   },
