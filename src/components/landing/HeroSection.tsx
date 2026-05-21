@@ -46,7 +46,7 @@ const HeroSection = () => {
               href="#cta"
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-radar-red px-8 py-4 text-base font-semibold text-white transition-all hover:bg-radar-red-hover glow-red-sm hover:glow-red"
             >
-              Quero acessar o Radar
+              QUERO SAIR NA FRENTE
               <ArrowRight className="h-5 w-5" />
             </a>
             <a
