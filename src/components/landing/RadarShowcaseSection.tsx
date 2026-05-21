@@ -7,7 +7,7 @@ const RadarShowcaseSection = () => {
       {/* Animated radar background that overflows upward over the Hero */}
       <div
         aria-hidden
-        className="pointer-events-none absolute left-1/2 -translate-x-1/2 -top-[15%] w-[80vw] sm:w-[60vw] md:w-[50vw] aspect-square max-w-[700px] z-0"
+        className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] sm:w-[80vw] md:w-[70vw] aspect-square max-w-[900px] z-0"
       >
         {/* radial glow */}
         <div
