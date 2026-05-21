@@ -68,7 +68,7 @@ const RadarShowcaseSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7 }}
-          className="mx-auto max-w-3xl card-glass rounded-2xl border border-radar-red/20 p-6 md:p-8 glow-red-sm"
+          className="mx-auto max-w-3xl rounded-2xl border border-radar-red/20 p-6 md:p-8"
         >
           {/* Header */}
           <div className="flex items-center gap-3 mb-6">
